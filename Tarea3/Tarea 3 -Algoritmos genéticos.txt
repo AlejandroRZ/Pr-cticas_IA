@@ -1,0 +1,26 @@
+Tarea 3: Algoritmos genéticos.
+Clase: Inteligencia artificial.
+Profesores: Manuel Cristóbal López Michelone, Yessica martínez Reyes y César Hernández Solís
+Alumno: Javier Alejandro Rivera Zavala-311288876
+
+El problema de la mochila es un problema clásico de optimización combinatoria, básicamente consta de una situación en la que, dada una mochila con una capacidad máxima y una lista de elementos, cada uno con un peso y un valor asociados, debemos de intentar de cargar la mochila con una colección de elementos tal que, la suma total de sus pesos no exceda la capacidad de la mochila, pero que al mismo tiempo se logre llevar el mayor valor total. Respecto a esto último, muchas veces el peso es equivalente al valor, pero en otras tantas ocasiones se trata de factores independientes. 
+
+En la implementación que he desarrollado, se trata de llevar tantas frutas como sea posible en nuestra bolsa del mandado, pues tienda UNAM las tiene en oferta, la única restricción es que sólo podemos llevar una fruta de cada tipo. Para llevar a cabo nuestra compra, juntamos inicialmente a 30 personas mágicas que se reproducen muy rápido.
+
+Ahora, en cuanto al código proporcionado, su funcionamiento en general es el que sigue:
+
+    - Se define un diccionario que corresponde a una lista de las frutas en oferta con su nombre, peso y valor.
+    - La capacidad máxima definida es de 250 kg.
+    - Definimos los parámetros del algoritmo genético: el tamaño de la población, la probabilidad de mutación y el número de generaciones.
+    - Definí funciones para inicializar la población con 30 individuos, para calcular el fitness de un individuo (con base en el valor acumulado de las frutas 
+    elegidas), para seleccionar aleatoriamente a algún individuo en el momento oportuno, para realizar la cruza de individuos y obviamente, para mutar a los individuos.
+    -La función principal ejecuta el algoritmo genético completo, generando nuevas poblaciones en cada iteración y seleccionando el mejor individuo al final.
+    
+ Al final, se imprime el mejor individuo encontrado junto con los productos seleccionados y el peso total de los productos seleccionados en la mejor solución.
+ 
+Referencias:
+Genetically solving the age old Knapsack Problem. (s.f.). Arpit Bhayani. https://arpitbhayani.me/blogs/genetic-knapsack/
+
+Viadinugroho, R. A. A. (7 de Marzo de 2021). Genetic Algorithm in R: The Knapsack Problem. Medium. https://towardsdatascience.com/genetic-algorithm-in-r-the-knapsack-problem-3edc5b07d4a7
+
+Uddin, M. S. (24 de Abril de 2022). How to Solve the Knapsack Problem Using Genetic Algorithm in Python. Plainenglish.io/Blog/Genetic-Algorithm-In-Python-101-Da1687d3339b. https://plainenglish.io/blog/genetic-algorithm-in-python-101-da1687d3339b
